@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import Header from "../components/Header";
 import Input from "../components/Input";
 import Button from "../components/Button";
 
 import { getProfile, updateProfile } from "../services/api";
 
-const BACKEND_URL = "http://127.0.0.1:8000";
+const BACKEND_URL = "https://taskflow-pro-hurb.onrender.com";
 
 function Profile() {
   const navigate = useNavigate();
