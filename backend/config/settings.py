@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-7km0oe+sy1b6!)+sirdt*@!fvponw0obqmgq6ub=*d)loxvcf@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "[::1]",
+    "taskflow-pro-hurb.onrender.com",
+]
 
 
 # Application definition
