@@ -28,6 +28,7 @@ urlpatterns = [
         TokenObtainPairView.as_view(),
         name="token_obtain_pair"
     ),
+
     path(
         "api/token/refresh/",
         TokenRefreshView.as_view(),
@@ -35,9 +36,8 @@ urlpatterns = [
     ),
 ]
 
-# Serve uploaded media files during development
-if settings.DEBUG:
-    urlpatterns += static(
-        settings.MEDIA_URL,
-        document_root=settings.MEDIA_ROOT
-    )
+# Serve uploaded media files
+urlpatterns += static(
+    settings.MEDIA_URL,
+    document_root=settings.MEDIA_ROOT
+)
